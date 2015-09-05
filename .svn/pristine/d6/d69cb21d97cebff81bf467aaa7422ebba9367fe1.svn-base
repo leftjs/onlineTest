@@ -1,0 +1,40 @@
+package com.iweb.dao.impl;
+
+import java.sql.*;
+
+public class BaseDAO {
+	
+	static {
+		try{
+			Class.forName("oracle.jdbc.driver.OracleDriver");
+		}catch(Exception e){
+			e.printStackTrace();
+		}
+	}
+	
+	public Connection getConn(){
+		Connection conn = null;
+		try{
+			conn = DriverManager.getConnection("jdbc:oracle:thin:@192.168.23.100:1521:orcl", "dmh", "pass");
+		}catch(Exception e){
+			e.printStackTrace();
+		}
+		return conn;
+	}
+
+	public void close(ResultSet rs, PreparedStatement pstmt, Connection conn){
+		try{
+			if(rs != null && !rs.isClosed()){
+				rs.close();
+			}
+			if(pstmt != null && !pstmt.isClosed()){
+				pstmt.close();
+			}
+			if(conn != null && !conn.isClosed()){
+				conn.close();
+			}
+		}catch(Exception e){
+			e.printStackTrace();
+		}
+	}
+}

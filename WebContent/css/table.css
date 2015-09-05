@@ -1,0 +1,33 @@
+table {
+	font-family:verdana, arial, sans-sarif;
+	font-size:13px;
+	color:#333;
+	border:1px solid #999;
+	border-collapse:collapse;
+	width:100%;
+}
+th {
+	background-color:#c3dde0;
+	border:1px solid #a9c6c9;
+	padding:8px;
+}
+tr {
+	background-color:#d4e3e5;
+	border:1px solid #a9c6c9;
+	padding:8px;
+}
+tr:gt(0):hover {
+	background:#ff6;
+}
+td {
+	border:1px solid #a9c6c9;
+	padding:8px;
+}
+.success {
+	background:green;
+	color:#fff;
+}
+.fail {
+	background:red;
+	color:#fff;
+}

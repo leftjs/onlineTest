@@ -1,0 +1,27 @@
+#aa{
+	width:401px;
+	height:850px;
+	float:left;
+}
+#bb{
+	width:400px;
+	height:300px;
+	border:1px solid black;
+	float:left;
+}
+		
+#dd{
+	width:900px;
+	border:1px solid black;
+	float:left;
+}
+#cc{
+	width:400px;
+	height:550px;
+	border:1px solid black;
+	margin:300px 0;
+}
+
+button{
+	margin:0 auto;
+}
