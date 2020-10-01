@@ -1,5 +1,7 @@
 package com.iweb.dao;
-
+/**
+	 * Interfaces
+	 */
 import java.util.List;
 
 import com.iweb.entity.Question;
